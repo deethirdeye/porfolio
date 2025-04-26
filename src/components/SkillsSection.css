@@ -30,9 +30,82 @@
   font-weight: 300;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  width: 160px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skill-card.water-hover:hover {
+  justify-content: flex-end;
 }
 
 .skill-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.skill-label {
+  z-index: 2;
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  transition: margin 0.3s;
+}
+
+.water-bar-container {
+  width: 60px;
+  height: 90px;
+  background: #181818;
+  border-radius: 12px 12px 16px 16px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 8px #0006;
+  display: flex;
+  align-items: flex-end;
+}
+
+.water-bar {
+  width: 100%;
+  background: linear-gradient(180deg, #fff 80%, #bbb 100%);
+  border-radius: 0 0 16px 16px;
+  transition: height 0.6s cubic-bezier(.4,2,.3,1), background 0.4s;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bar-percent {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+.water-hover:hover .water-bar {
+  background: linear-gradient(180deg, #bbb 0%, #fff 100%);
+  height: 100%;
+}
+
+.skill-strength {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  z-index: 2;
 }

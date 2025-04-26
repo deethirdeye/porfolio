@@ -1,3 +1,11 @@
+body, html, #root, .App {
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -7,7 +15,7 @@
   background: var(--color-bg);
   color: var(--color-text);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .spline-wrapper {
@@ -75,4 +83,25 @@
   color: #fff;
   border: 1px solid #fff;
   transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .spline-wrapper {
+    width: 100vw;
+    height: 75vh;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    
+  }
+  .spline-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 56px;
+    background: #000;
+    z-index: 10;
+    pointer-events: none;
+  }
 }

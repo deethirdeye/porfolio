@@ -5,22 +5,23 @@ const AboutSection: React.FC = () => {
   return (
     <section className="about-section" id="about">
       <div className="about-content">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate <b>Data Engineer</b> with 3+ years of experience, specializing in Website and Mobile App Development, as well as AI/ML projects. I love building scalable data systems, creating beautiful digital experiences, and exploring the latest in artificial intelligence.
+        <h2 className="about-title">About Me</h2>
+        <p className="about-intro-text">
+          Hi, I’m a Data Engineer, builder, and lifelong learner. My journey started with a love for tech and a curiosity for how things work. These days, with over three years of experience, I help people and companies turn raw data into real insights and ideas into digital products that actually make a difference.<br/><br/>
+          I enjoy tackling new challenges—whether it’s making a data pipeline run smoother, launching a mobile app, or bringing an AI model to life. I believe the best work happens when people share ideas and build together. Every project is a chance to create something meaningful, and I love being part of that process.
         </p>
         <div className="about-details">
-          <div>
+          <div className="about-current-role standout-card">
             <h3>Current Role</h3>
-            <p>Full-time Data Engineer</p>
+            <p>
+              I work remotely as a Data Engineer at ZyberTech.Inc, based in California. Most of my days are spent working with PySpark, Databricks, SQL, ADF Azure tools, and Power BI—helping teams solve real-world problems with data.
+            </p>
           </div>
-          <div>
-            <h3>Specialties</h3>
-            <ul>
-              <li>Data Engineering</li>
-              <li>Web & Mobile App Development</li>
-              <li>AI/ML Projects</li>
-            </ul>
+          <div className="about-freelance standout-card">
+            <h3>Side Projects & Freelance Work</h3>
+            <p>
+              When I’m not at my day job, I enjoy teaming up on web, mobile, and AI projects. I like working with people who care about what they build, and I’m always up for a new challenge—whether it’s designing a clean user interface or deploying a smart AI model.
+            </p>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Real-Time Data Pipeline',
     desc: 'Built a scalable data pipeline using Spark, Kafka, and AWS for streaming analytics.',
-    tags: ['Data Engineering', 'AWS', 'Spark']
+    tags: ['Data Engineering', 'Azure', 'Spark','Python']
   },
   {
     title: 'AI Chatbot Platform',
