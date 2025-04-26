@@ -70,9 +70,10 @@
 }
 
 .contact-details {
-  margin-top: 24px;
-  text-align: center;
-  color: #fff;
+  margin-top: 16px;
+  color: #aaa;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
 }
 
 .contact-details a {
