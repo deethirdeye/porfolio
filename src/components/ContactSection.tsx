@@ -45,8 +45,8 @@ const ContactSection: React.FC = () => {
         {submitted && <div className="contact-success">Thank you! I'll get back to you soon.</div>}
       </form>
       <div className="contact-details">
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>Email: de2pakprem@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/deepakprem25/" target="_blank" rel="noopener noreferrer">deepakprem25</a></p>
       </div>
     </section>
   );

@@ -70,8 +70,17 @@
 }
 
 .contact-details {
-  margin-top: 16px;
-  color: #aaa;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1rem;
+  margin-top: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.contact-details a:hover {
+  color: #bbb;
 }
