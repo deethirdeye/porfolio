@@ -4,7 +4,6 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
-import WhatICanDo from './components/WhatICanDo';
 import AISection from './components/AISection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -16,7 +15,6 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <WhatICanDo />
       <AISection />
       <ContactSection />
       <Footer />
