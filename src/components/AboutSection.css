@@ -127,3 +127,34 @@
   gap: 8px;
   box-shadow: 0 1px 8px #0004;
 }
+
+.about-stack-container {
+  position: relative;
+  width: 100%;
+  min-height: 120vh;
+}
+
+.about-stack-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.about-stack-item .about-title,
+.about-stack-item .about-intro-text,
+.about-stack-item .standout-card {
+  pointer-events: auto;
+}
+
+@media (max-width: 800px) {
+  .about-stack-container {
+    min-height: 150vh;
+  }
+}

@@ -5,17 +5,17 @@ const projects = [
   {
     title: 'Real-Time Data Pipeline',
     desc: 'Built a scalable data pipeline using Spark, Kafka, and AWS for streaming analytics.',
-    tags: ['Data Engineering', 'Azure', 'Spark','Python']
+    tags: ['Data Engineering', 'Python', 'Azure', 'Spark']
   },
   {
-    title: 'AI Chatbot Platform',
-    desc: 'Developed a cross-platform chatbot using NLP and deep learning for customer support.',
-    tags: ['AI/ML', 'NLP', 'Deep Learning']
+    title: 'Computer Vision with YOLO',
+    desc: 'Developed an object detection system using YOLO for real-time video analytics and automation.',
+    tags: ['Computer Vision', 'YOLO', 'AI/ML']
   },
   {
-    title: 'Mobile Health App',
-    desc: 'Created a Flutter app for health tracking with smart notifications and analytics.',
-    tags: ['Mobile', 'Flutter', 'Analytics']
+    title: 'Community App for Expats',
+    desc: 'Built a social platform for expats to connect, share resources, and organize events using React Native and Expo.',
+    tags: ['React Native', 'Expo', 'Community']
   },
   {
     title: 'Portfolio Website',
