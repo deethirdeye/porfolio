@@ -1,0 +1,77 @@
+.contact-section {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin: 0 auto 24px auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  background: #181818;
+  color: #fff;
+  margin-bottom: 4px;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  max-height: 220px;
+}
+
+.contact-form button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 32px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.contact-form button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.contact-success {
+  margin-top: 10px;
+  color: #4caf50;
+  font-size: 1rem;
+}
+
+.contact-details {
+  margin-top: 16px;
+  color: #aaa;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+}

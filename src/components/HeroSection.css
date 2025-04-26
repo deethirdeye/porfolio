@@ -1,0 +1,78 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  position: relative;
+  overflow: hidden;
+}
+
+.spline-wrapper {
+  width: 100vw;
+  height: 75vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: -60px; /* Move 3D object up */
+  position: relative;
+  z-index: 2;
+}
+
+/* Hide the Spline watermark by overlaying a black box */
+.spline-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  height: 400px;
+  background: #000;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: -75px; /* Add top space between 3D object and text */
+  z-index: 3;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-top: 40px; /* Extra space above heading */
+}
+
+.hero-content h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 20px 0 40px 0;
+  color: #aaa;
+}
+
+.get-to-know-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 14px 36px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.get-to-know-btn:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: translateY(-2px) scale(1.03);
+}
