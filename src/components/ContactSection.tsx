@@ -3,11 +3,24 @@ import { useForm, ValidationError } from '@formspree/react';
 import './ContactSection.css';
 import ContactSplineBackground from './ContactSplineBackground';
 
+const isDesktop = () => {
+  if (typeof window === 'undefined') return false;
+  return window.innerWidth >= 1024; // You can adjust this breakpoint as needed
+};
+
 const ContactSection: React.FC = () => {
   const [state, handleSubmit] = useForm("mdkgkzyl");
+  const [desktop, setDesktop] = React.useState(isDesktop());
+
+  React.useEffect(() => {
+    const handleResize = () => setDesktop(isDesktop());
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <section className="contact-section" id="contact" style={{position: 'relative', overflow: 'hidden'}}>
-      <ContactSplineBackground />
+      {desktop && <ContactSplineBackground />}
       <div className="contact-content" style={{position: 'relative', zIndex: 2}}>
         <h2>Contact Me</h2>
         <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
