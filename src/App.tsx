@@ -15,10 +15,9 @@ function App() {
       <HeroSection />
       <WhatICanDoPage />
       <AboutSection />
-    
+      <SkillsSection />
       <ProjectsSection />
       <AISection />
-      <SkillsSection />
       <ContactSection />
       <Footer />
     </div>
