@@ -14,10 +14,11 @@ function App() {
     <div className="App">
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
+    
       <ProjectsSection />
-      <WhatICanDo />
+      {/* //<WhatICanDo /> */}
       <AISection />
+      <SkillsSection />
       <ContactSection />
       <Footer />
     </div>
