@@ -1,0 +1,68 @@
+.what-i-can-do-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+  padding: 0;
+}
+
+.what-i-can-do-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 32px;
+  z-index: 2;
+  text-align: center;
+  position: relative;
+  margin-top: -80vh;
+}
+
+.what-i-can-do-spline-only {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.spline-overlay-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spline-overlay-container canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 0;
+}
+
+/* Remove the overlay style if present */
+
+
+.spline-watermark-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 60px;
+  background: rgb(0, 0, 0);
+  z-index: 10;
+  pointer-events: none;
+  border-top-left-radius: 10px;
+}

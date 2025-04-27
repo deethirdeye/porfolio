@@ -1,0 +1,50 @@
+.spline-background-container {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.spline-background-container canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.spline-contact-background {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.spline-contact-background canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.spline-black-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.spline-watermark-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 110px;
+  height: 38px;
+  background: rgba(0,0,0,0.88);
+  z-index: 2;
+  pointer-events: none;
+  border-top-left-radius: 12px;
+}
