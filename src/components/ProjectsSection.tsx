@@ -4,7 +4,7 @@ import './ProjectsSection.css';
 const projects = [
   {
     title: 'Real-Time Data Pipeline',
-    desc: 'Built a scalable data pipeline using Spark, Kafka, and AWS for streaming analytics.',
+    desc: 'Built a scalable data pipeline using Spark, Databricks and Azure for streaming analytics.',
     tags: ['Data Engineering', 'Python', 'Azure', 'Spark']
   },
   {

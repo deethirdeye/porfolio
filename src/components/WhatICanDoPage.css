@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #121212;
   padding: 0;
 }
@@ -20,7 +20,7 @@
   z-index: 2;
   text-align: center;
   position: relative;
-  margin-top: -80vh;
+  margin-top: px;
 }
 
 .what-i-can-do-spline-only {
@@ -65,4 +65,60 @@
   z-index: 10;
   pointer-events: none;
   border-top-left-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .what-i-can-do-section {
+    min-height: 0;
+    height: auto;
+    background: #000 !important;
+   
+    justify-content: flex-start;
+  }
+  .what-i-can-do-title {
+    margin-top: 60px;
+  }
+  .what-i-can-do-spline-only,
+  .spline-overlay-container {
+    position: relative;
+    margin: -300px;
+    
+
+
+  }
+  .spline-overlay-container canvas {
+   
+    display: flex;
+    overflow: scroll;
+
+    
+  }
+  .what-i-can-do-cards {
+    overflow: scroll;
+
+  }
+  .what-i-can-do-cards > * {
+    overflow: scroll;
+
+
+  }
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 2px 12px #0006;
+  border-radius: 50%;
+  transition: transform 0.18s;
+}
+.scroll-to-top-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px #0008;
 }
