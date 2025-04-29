@@ -106,7 +106,7 @@
 
 .scroll-to-top-btn {
   position: fixed;
-  right: 24px;
+  left: 20px;
   bottom: 24px;
   z-index: 1000;
   background: none;
@@ -121,4 +121,16 @@
 .scroll-to-top-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 6px 24px #0008;
+}
+
+/* Move Cal.com floating button to the left */
+.cal-btn, .cal-floating-button, [class*="cal-btn"], [class*="cal-floating-button"] {
+  right: auto !important;
+  left: 32px !important;
+}
+
+@media (max-width: 800px) {
+  .cal-btn, .cal-floating-button, [class*="cal-btn"], [class*="cal-floating-button"] {
+    left: 12px !important;
+  }
 }
