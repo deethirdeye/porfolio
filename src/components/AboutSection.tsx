@@ -14,13 +14,13 @@ const AboutSection: React.FC = () => {
           <div className="about-current-role standout-card">
             <h3>Current Role</h3>
             <p>
-              I work remotely as a Data Engineer at ZyberTech.Inc, based in California. Most of my days are spent working with PySpark, Databricks, SQL, ADF Azure tools, and Power BI—helping teams solve real-world problems with data.
+              I work remotely as a Data Engineer at Third Eye Info Technology  based in California. Most of my days are spent working with PySpark, Databricks, SQL, ADF Azure tools, and Power BI—helping teams solve real-world problems with data.
             </p>
           </div>
           <div className="about-freelance standout-card">
-            <h3>Side Projects & Freelance Work</h3>
+            <h3>Internal Projects</h3>
             <p>
-              When I’m not at my day job, I enjoy teaming up on web, mobile, and AI projects. I like working with people who care about what they build, and I’m always up for a new challenge, whether it’s designing a clean user interface or deploying a smart AI model.
+              When I’m not at working on data projects, I enjoy teaming up on web, mobile, and AI projects. I like working with people who care about what they build, and I’m always up for a new challenge, whether it’s designing a clean user interface or deploying a smart AI model.
             </p>
           </div>
         </div>
