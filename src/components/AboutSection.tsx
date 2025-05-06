@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
           <div className="about-current-role standout-card">
             <h3>Current Role</h3>
             <p>
-              I work remotely as a Data Engineer at ZyberTech.Inc, based in California. Most of my days are spent working with PySpark, Databricks, SQL, ADF Azure tools, and Power BI—helping teams solve real-world problems with data.
+              I work remotely as a Data Engineer at Third Eye Info Technology. Most of my days are spent working with PySpark, Databricks, SQL, ADF Azure tools, and Power BI—helping teams solve real-world problems with data.
             </p>
           </div>
           <div className="about-freelance standout-card">
